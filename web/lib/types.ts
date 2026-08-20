@@ -268,14 +268,25 @@ export type Sensitivity = Envelope & {
   families: string[];
 };
 
+export type ProvenanceConfidence = "HIGH" | "MEDIUM" | "LOW" | "UNRESOLVED";
+
 export type ProvenanceEntry = {
   figure_id: string;
-  panel_letters: string[];
-  script_path: string;
-  input_data_paths: string[];
-  output_paths: string[];
-  mtime: string;
+  in_article?: boolean;
+  script?: string | null;
+  input_files?: string[];
+  confidence?: ProvenanceConfidence | string;
+  unresolved_reason?: string | null;
+  panel_letters?: string[];
+  script_path?: string;
+  input_data_paths?: string[];
+  output_paths?: string[];
+  mtime?: string;
   status: string;
 };
 
-export type ProvenanceManifest = Envelope & { entries: ProvenanceEntry[] };
+export type ProvenanceManifest = Envelope & {
+  entries: ProvenanceEntry[];
+  confidence_definitions?: Record<string, string>;
+  confidence_counts?: Record<string, number>;
+};

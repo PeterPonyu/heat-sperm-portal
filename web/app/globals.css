@@ -156,6 +156,7 @@ h3 {
   padding: 0.75rem 0.9rem;
   margin: 0 0 1.1rem;
   border-left-width: 4px;
+  overflow-wrap: break-word;
 }
 
 .banner.pending {
@@ -179,14 +180,27 @@ h3 {
   font-weight: 600;
 }
 
+.badge.placeholder,
+.badge.MEDIUM,
+.badge.LOW {
+  background: var(--warn-bg);
+  color: var(--warn-ink);
+}
+
+.badge.HIGH,
 .badge.verified {
   background: var(--ok-bg);
   color: var(--ok-ink);
 }
 
-.badge.placeholder {
-  background: var(--warn-bg);
-  color: var(--warn-ink);
+.badge.UNRESOLVED,
+.badge.orphan {
+  background: #f3dcdc;
+  color: #7a1f1f;
+}
+
+.reason-cell {
+  max-width: 28rem;
 }
 
 .card-grid {

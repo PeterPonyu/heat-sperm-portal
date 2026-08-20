@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "generated_utc": "2026-08-20T15:23:33Z",
+ "generated_utc": "2026-08-20T16:30:24Z",
  "repository": "heat-sperm-portal",
  "contains_individual_level_data": false,
  "datasets": [
@@ -68,10 +68,10 @@
    "file": "provenance_manifest.json",
    "dataset": "provenance_manifest",
    "description": "Which script produced each figure, from which inputs, to which outputs.",
-   "data_status": "placeholder",
-   "n_rows": 6,
+   "data_status": "verified",
+   "n_rows": 16,
    "sources": [
-    "fixtures/provenance_manifest.fixture.json"
+    "results/aggregate_source/provenance_manifest.json"
    ]
   }
  ]

@@ -1,0 +1,201 @@
+{
+  "entries": [
+    {
+      "figure_id": "Figure1",
+      "in_article": true,
+      "script": "figure_scripts_v2/make_figure1.R",
+      "input_files": [
+        "weather_daily.csv",
+        "harmonized_donor_samples.csv",
+        "donor_exposure.csv"
+      ],
+      "confidence": "HIGH",
+      "status": "resolved",
+      "unresolved_reason": "Current generator is figure_scripts_v2. Legacy figure_scripts/make_figure1.R is stale (Windows workbook paths)."
+    },
+    {
+      "figure_id": "Figure2",
+      "in_article": true,
+      "script": "figure_scripts_v2/make_figure2.R",
+      "input_files": [
+        "harmonized_donor_samples.csv",
+        "analysis_sample_sd_reference.csv"
+      ],
+      "confidence": "HIGH",
+      "status": "resolved",
+      "unresolved_reason": null
+    },
+    {
+      "figure_id": "Figure3",
+      "in_article": true,
+      "script": "figure_scripts/make_figure3.R",
+      "input_files": [
+        "ABSENT: Tem_Sperm_武汉.xlsx",
+        "ABSENT: Tem_Sperm_重庆.xlsx",
+        "ABSENT: 武汉_气温.xlsx",
+        "ABSENT: 重庆_气温.xlsx"
+      ],
+      "confidence": "MEDIUM",
+      "status": "resolved_script_rebuild_blocked",
+      "unresolved_reason": "Named generator exists. Rebuild blocked: workbook inputs named by the script are absent. Cannot claim the later script file produced this PNG."
+    },
+    {
+      "figure_id": "Figure4",
+      "in_article": true,
+      "script": "figure_scripts/make_figure4.R",
+      "input_files": [
+        "ABSENT: Tem_Sperm_武汉.xlsx",
+        "ABSENT: Tem_Sperm_重庆.xlsx",
+        "ABSENT: 武汉_气温.xlsx",
+        "ABSENT: 重庆_气温.xlsx"
+      ],
+      "confidence": "MEDIUM",
+      "status": "resolved_script_rebuild_blocked",
+      "unresolved_reason": "Same missing-workbook block as Figure 3."
+    },
+    {
+      "figure_id": "Figure5",
+      "in_article": true,
+      "script": "figure_scripts_v2/make_figure5.R",
+      "input_files": [
+        "exposure_response_results_fdr_2city_canonical.csv",
+        "exposure_response_results.csv",
+        "tableSX_cohort_exposure_interaction.csv"
+      ],
+      "confidence": "HIGH",
+      "status": "resolved",
+      "unresolved_reason": "Legacy make_figure5.R writes a DLNM to Figure5.png; it is not the current forest plot. Do not confuse with Supplementary_Figure8."
+    },
+    {
+      "figure_id": "Supplementary_Figure1",
+      "in_article": true,
+      "script": null,
+      "input_files": [],
+      "confidence": "UNRESOLVED",
+      "status": "unresolved",
+      "unresolved_reason": "No on-box script writes this filename. Historical pointer (LOW): 中介效应结果数据作图.R (absent). A similarly named figure in another project is out of scope."
+    },
+    {
+      "figure_id": "Supplementary_Figure2",
+      "in_article": true,
+      "script": null,
+      "input_files": [],
+      "confidence": "UNRESOLVED",
+      "status": "unresolved",
+      "unresolved_reason": "No on-box script writes this filename. Same absent historical pointer as Supplementary_Figure1."
+    },
+    {
+      "figure_id": "Supplementary_Figure3",
+      "in_article": true,
+      "script": null,
+      "input_files": [],
+      "confidence": "UNRESOLVED",
+      "status": "unresolved",
+      "unresolved_reason": "No on-box script writes this filename. Same absent generator as Supplementary_Figure1/2."
+    },
+    {
+      "figure_id": "Supplementary_Figure4",
+      "in_article": true,
+      "script": "figure_scripts_v2/make_supplementary_s4.R",
+      "input_files": [
+        "exposure_response_results.csv",
+        "exposure_response_results_fdr_2city_canonical.csv",
+        "donor_exposure.csv"
+      ],
+      "confidence": "HIGH",
+      "status": "resolved",
+      "unresolved_reason": null
+    },
+    {
+      "figure_id": "Supplementary_Figure5",
+      "in_article": true,
+      "script": "figure_scripts_v2/make_supplementary_s5.R",
+      "input_files": [
+        "donor_exposure.csv",
+        "xiamen_exposure.csv"
+      ],
+      "confidence": "HIGH",
+      "status": "resolved",
+      "unresolved_reason": null
+    },
+    {
+      "figure_id": "Supplementary_Figure6",
+      "in_article": true,
+      "script": "figure_scripts_v2/make_supplementary_s6.R",
+      "input_files": [
+        "exposure_response_pollution_adjusted.csv",
+        "sensitivity_humidity_heatindex.csv",
+        "donor_exposure_aq.csv"
+      ],
+      "confidence": "HIGH",
+      "status": "resolved",
+      "unresolved_reason": "July figure_scripts copy is superseded by figure_scripts_v2."
+    },
+    {
+      "figure_id": "Supplementary_Figure7",
+      "in_article": true,
+      "script": "figure_scripts/make_supplementary_s7.R",
+      "input_files": [
+        "donor_exposure.csv"
+      ],
+      "confidence": "MEDIUM",
+      "status": "resolved",
+      "unresolved_reason": "Script and PNG mtimes disagree by a few minutes. Windows library-path leftover."
+    },
+    {
+      "figure_id": "Supplementary_Figure8",
+      "in_article": true,
+      "script": null,
+      "input_files": [],
+      "confidence": "UNRESOLVED",
+      "status": "unresolved",
+      "unresolved_reason": "No make_supplementary_s8.R. Legacy make_figure5.R writes Figure5.png, not this file. Do not claim that script produced S8."
+    },
+    {
+      "figure_id": "Supplementary_Figure9",
+      "in_article": true,
+      "script": "figure_scripts/make_supplementary_s9.R",
+      "input_files": [
+        "exposure_response_results_fdr_2city_canonical.csv"
+      ],
+      "confidence": "MEDIUM",
+      "status": "resolved",
+      "unresolved_reason": "Rebuild blocked by a Windows output-prefix in the script. The named input CSV is present."
+    },
+    {
+      "figure_id": "Supplementary_Figure10",
+      "in_article": true,
+      "script": "figure_scripts/make_supplementary_s10.R",
+      "input_files": [
+        "sensitivity_heatwave_definitions.csv"
+      ],
+      "confidence": "MEDIUM",
+      "status": "resolved",
+      "unresolved_reason": "Same Windows output-prefix issue as Supplementary_Figure9."
+    },
+    {
+      "figure_id": "Figure6",
+      "in_article": false,
+      "script": "figure_scripts/make_figure6.R",
+      "input_files": [
+        "ABSENT: Tem_Sperm_武汉.xlsx",
+        "ABSENT: Tem_Sperm_重庆.xlsx"
+      ],
+      "confidence": "UNRESOLVED",
+      "status": "orphan",
+      "unresolved_reason": "Orphan: not cited in the current article. Script header writes Figure_forest, not Figure6. Fossil of a 6-to-5 renumbering."
+    }
+  ],
+  "confidence_definitions": {
+    "HIGH": "On-box script writes the exact current filename; listed inputs exist; script and PNG mtimes agree within about five minutes on the same day.",
+    "MEDIUM": "On-box script is the named generator. Inputs exist or are the script's declared paths. Script vs PNG mtimes disagree, or rebuild is blocked.",
+    "LOW": "Only a historical script name is pointed to by another file; that script is absent on the analysis host.",
+    "UNRESOLVED": "No on-box script writes this filename. No link was invented."
+  },
+  "confidence_counts": {
+    "HIGH": 6,
+    "MEDIUM": 5,
+    "LOW": 0,
+    "UNRESOLVED": 5
+  }
+}

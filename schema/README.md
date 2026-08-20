@@ -24,10 +24,10 @@ Files in `results/json/` and `web/public/data/` share one envelope. The site ren
 | `exposure_response` | `rows` | `vocabularies` |
 | `interaction_tests` | `rows` | — |
 | `sensitivity` | `rows` | `families` |
-| `provenance_manifest` | `entries` | — |
+| `provenance_manifest` | `entries` | `confidence_definitions`, `confidence_counts` |
 
 `manifest.json` is the index. It repeats `data_status` and `n_rows` per file and sets `contains_individual_level_data` to `false`.
 
-`data_status` is `verified` only when the builder read a real aggregate source. `placeholder` means the payload is a fixture (currently `provenance_manifest`). Do not treat placeholder paths or timestamps as results.
+`data_status` is `verified` only when the builder read a real aggregate source. `placeholder` means the payload is a fixture. For `provenance_manifest`, verified means the extract exists; figure-level `confidence` may still be MEDIUM or UNRESOLVED.
 
 Rebuild with `python3 scripts/build_aggregates.py`. `--check` compares a fresh build to `results/json/` (ignoring `generated_utc`).

@@ -83,4 +83,4 @@ Two unreconciled sets: the manuscript primary interaction file (sparse columns) 
 
 ## Provenance
 
-Figure-to-script records are pending until `results/aggregate_source/provenance_manifest.json` exists. The fixture supplies field names only.
+Figure-to-script records are a sanitized extract in `results/aggregate_source/provenance_manifest.json`. Public fields are figure name, script, input filenames, confidence, and unresolved reason. UNRESOLVED and MEDIUM rows stay as recorded.

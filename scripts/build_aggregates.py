@@ -762,13 +762,22 @@ def build_sensitivity() -> dict:
 def build_provenance_manifest() -> dict:
     fixture = json.loads((FIXTURES / "provenance_manifest.fixture.json").read_text(encoding="utf-8"))
     real = SRC / "provenance_manifest.json"
+    extra: dict = {}
     if real.exists():
-        entries = json.loads(real.read_text(encoding="utf-8"))
-        entries = entries.get("entries", entries) if isinstance(entries, dict) else entries
-        status, note = "verified", "Loaded from the upstream provenance manifest."
+        raw = json.loads(real.read_text(encoding="utf-8"))
+        entries = raw.get("entries", raw) if isinstance(raw, dict) else raw
+        extra = {key: raw[key] for key in ("confidence_definitions", "confidence_counts")
+                 if isinstance(raw, dict) and key in raw}
+        status = "verified"
+        note = (
+            "Public extract of the analysis-host provenance audit. Absolute paths, "
+            "host names and confidential directory names were stripped. Figure-level "
+            "confidence is copied as recorded; UNRESOLVED and MEDIUM rows are not "
+            "upgraded."
+        )
         sources = [source_ref("provenance_manifest.json",
                               "01_REVISION_DOCS/provenance/provenance_manifest.json",
-                              "figure-to-script provenance records")]
+                              "sanitized figure-to-script records")]
     else:
         entries = fixture["entries"]
         status = "placeholder"
@@ -792,10 +801,14 @@ def build_provenance_manifest() -> dict:
         rows=entries,
         data_status=status,
         notes=[note,
-               "Field contract: figure_id, panel_letters, script_path, "
-               "input_data_paths, output_paths, mtime, status.",
-               "Input paths may name confidential tables. They are shown as paths "
-               "only; no content from them is served by this site."],
+               "Public fields: figure_id, in_article, script, input_files, "
+               "confidence, status, unresolved_reason. Input names may refer to "
+               "confidential tables; only the filename is shown.",
+               "Confidence is HIGH, MEDIUM, LOW or UNRESOLVED as defined in "
+               "confidence_definitions. Dataset data_status=verified means the "
+               "extract was built from a real audit file, not that every figure "
+               "link is settled."],
+        **extra,
     )
 
 

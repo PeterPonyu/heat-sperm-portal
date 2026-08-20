@@ -2,134 +2,222 @@
  "schema_version": "1.0.0",
  "dataset": "provenance_manifest",
  "description": "Which script produced each figure, from which inputs, to which outputs.",
- "generated_utc": "2026-08-20T15:23:33Z",
- "data_status": "placeholder",
+ "generated_utc": "2026-08-20T16:30:24Z",
+ "data_status": "verified",
  "provenance": {
   "sources": [
    {
-    "file": "fixtures/provenance_manifest.fixture.json",
-    "upstream_origin": "none — fixture written by hand",
-    "kind": "placeholder",
-    "sha256": "ec2a43141fba932f90abc4234cd5257949276a58962f21ac5d96cfa50edd2c62",
-    "bytes": 2868
+    "file": "results/aggregate_source/provenance_manifest.json",
+    "upstream_origin": "01_REVISION_DOCS/provenance/provenance_manifest.json",
+    "kind": "sanitized figure-to-script records",
+    "sha256": "62203c0244ea1aa5aa96fdc19cfe0b225fdcaf54460d80ae999f25f5a81d1ef1",
+    "bytes": 7108
    }
   ]
  },
  "notes": [
-  "PLACEHOLDER. The upstream manifest 01_REVISION_DOCS/provenance/provenance_manifest.json did not exist when this dataset was built. These entries carry the target field shape only; figure_id values are real, every path, mtime and status is a placeholder. Drop the real file into results/aggregate_source/provenance_manifest.json and rebuild.",
-  "Field contract: figure_id, panel_letters, script_path, input_data_paths, output_paths, mtime, status.",
-  "Input paths may name confidential tables. They are shown as paths only; no content from them is served by this site."
+  "Public extract of the analysis-host provenance audit. Absolute paths, host names and confidential directory names were stripped. Figure-level confidence is copied as recorded; UNRESOLVED and MEDIUM rows are not upgraded.",
+  "Public fields: figure_id, in_article, script, input_files, confidence, status, unresolved_reason. Input names may refer to confidential tables; only the filename is shown.",
+  "Confidence is HIGH, MEDIUM, LOW or UNRESOLVED as defined in confidence_definitions. Dataset data_status=verified means the extract was built from a real audit file, not that every figure link is settled."
  ],
+ "confidence_definitions": {
+  "HIGH": "On-box script writes the exact current filename; listed inputs exist; script and PNG mtimes agree within about five minutes on the same day.",
+  "MEDIUM": "On-box script is the named generator. Inputs exist or are the script's declared paths. Script vs PNG mtimes disagree, or rebuild is blocked.",
+  "LOW": "Only a historical script name is pointed to by another file; that script is absent on the analysis host.",
+  "UNRESOLVED": "No on-box script writes this filename. No link was invented."
+ },
+ "confidence_counts": {
+  "HIGH": 6,
+  "MEDIUM": 5,
+  "LOW": 0,
+  "UNRESOLVED": 5
+ },
  "entries": [
   {
    "figure_id": "Figure1",
-   "panel_letters": [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f"
+   "in_article": true,
+   "script": "figure_scripts_v2/make_figure1.R",
+   "input_files": [
+    "weather_daily.csv",
+    "harmonized_donor_samples.csv",
+    "donor_exposure.csv"
    ],
-   "script_path": "PLACEHOLDER/figure_scripts/make_figure1.R",
-   "input_data_paths": [
-    "PLACEHOLDER/aggregate_weather_summary.csv"
-   ],
-   "output_paths": [
-    "PLACEHOLDER/Figure1.pdf",
-    "PLACEHOLDER/Figure1.png"
-   ],
-   "mtime": "1970-01-01T00:00:00Z",
-   "status": "unknown"
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": "Current generator is figure_scripts_v2. Legacy figure_scripts/make_figure1.R is stale (Windows workbook paths)."
   },
   {
    "figure_id": "Figure2",
-   "panel_letters": [
-    "a",
-    "b"
+   "in_article": true,
+   "script": "figure_scripts_v2/make_figure2.R",
+   "input_files": [
+    "harmonized_donor_samples.csv",
+    "analysis_sample_sd_reference.csv"
    ],
-   "script_path": "PLACEHOLDER/figure_scripts/make_figure2.R",
-   "input_data_paths": [
-    "PLACEHOLDER/exposure_response_results.csv"
-   ],
-   "output_paths": [
-    "PLACEHOLDER/Figure2.pdf",
-    "PLACEHOLDER/Figure2.png"
-   ],
-   "mtime": "1970-01-01T00:00:00Z",
-   "status": "unknown"
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": null
   },
   {
    "figure_id": "Figure3",
-   "panel_letters": [
-    "a",
-    "b",
-    "c"
+   "in_article": true,
+   "script": "figure_scripts/make_figure3.R",
+   "input_files": [
+    "ABSENT: Tem_Sperm_武汉.xlsx",
+    "ABSENT: Tem_Sperm_重庆.xlsx",
+    "ABSENT: 武汉_气温.xlsx",
+    "ABSENT: 重庆_气温.xlsx"
    ],
-   "script_path": "PLACEHOLDER/figure_scripts/make_figure3.R",
-   "input_data_paths": [
-    "PLACEHOLDER/exposure_response_results.csv"
-   ],
-   "output_paths": [
-    "PLACEHOLDER/Figure3.pdf"
-   ],
-   "mtime": "1970-01-01T00:00:00Z",
-   "status": "unknown"
+   "confidence": "MEDIUM",
+   "status": "resolved_script_rebuild_blocked",
+   "unresolved_reason": "Named generator exists. Rebuild blocked: workbook inputs named by the script are absent. Cannot claim the later script file produced this PNG."
   },
   {
    "figure_id": "Figure4",
-   "panel_letters": [
-    "a",
-    "b"
+   "in_article": true,
+   "script": "figure_scripts/make_figure4.R",
+   "input_files": [
+    "ABSENT: Tem_Sperm_武汉.xlsx",
+    "ABSENT: Tem_Sperm_重庆.xlsx",
+    "ABSENT: 武汉_气温.xlsx",
+    "ABSENT: 重庆_气温.xlsx"
    ],
-   "script_path": "PLACEHOLDER/figure_scripts/make_figure4.R",
-   "input_data_paths": [
-    "PLACEHOLDER/sensitivity_results.csv"
-   ],
-   "output_paths": [
-    "PLACEHOLDER/Figure4.pdf"
-   ],
-   "mtime": "1970-01-01T00:00:00Z",
-   "status": "unknown"
+   "confidence": "MEDIUM",
+   "status": "resolved_script_rebuild_blocked",
+   "unresolved_reason": "Same missing-workbook block as Figure 3."
   },
   {
    "figure_id": "Figure5",
-   "panel_letters": [
-    "a",
-    "b",
-    "c",
-    "d"
+   "in_article": true,
+   "script": "figure_scripts_v2/make_figure5.R",
+   "input_files": [
+    "exposure_response_results_fdr_2city_canonical.csv",
+    "exposure_response_results.csv",
+    "tableSX_cohort_exposure_interaction.csv"
    ],
-   "script_path": "PLACEHOLDER/figure_scripts/make_figure5.R",
-   "input_data_paths": [
-    "PLACEHOLDER/interaction_results.csv"
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": "Legacy make_figure5.R writes a DLNM to Figure5.png; it is not the current forest plot. Do not confuse with Supplementary_Figure8."
+  },
+  {
+   "figure_id": "Supplementary_Figure1",
+   "in_article": true,
+   "script": null,
+   "input_files": [],
+   "confidence": "UNRESOLVED",
+   "status": "unresolved",
+   "unresolved_reason": "No on-box script writes this filename. Historical pointer (LOW): 中介效应结果数据作图.R (absent). A similarly named figure in another project is out of scope."
+  },
+  {
+   "figure_id": "Supplementary_Figure2",
+   "in_article": true,
+   "script": null,
+   "input_files": [],
+   "confidence": "UNRESOLVED",
+   "status": "unresolved",
+   "unresolved_reason": "No on-box script writes this filename. Same absent historical pointer as Supplementary_Figure1."
+  },
+  {
+   "figure_id": "Supplementary_Figure3",
+   "in_article": true,
+   "script": null,
+   "input_files": [],
+   "confidence": "UNRESOLVED",
+   "status": "unresolved",
+   "unresolved_reason": "No on-box script writes this filename. Same absent generator as Supplementary_Figure1/2."
+  },
+  {
+   "figure_id": "Supplementary_Figure4",
+   "in_article": true,
+   "script": "figure_scripts_v2/make_supplementary_s4.R",
+   "input_files": [
+    "exposure_response_results.csv",
+    "exposure_response_results_fdr_2city_canonical.csv",
+    "donor_exposure.csv"
    ],
-   "output_paths": [
-    "PLACEHOLDER/Figure5.pdf"
-   ],
-   "mtime": "1970-01-01T00:00:00Z",
-   "status": "unknown"
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": null
   },
   {
    "figure_id": "Supplementary_Figure5",
-   "panel_letters": [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f"
+   "in_article": true,
+   "script": "figure_scripts_v2/make_supplementary_s5.R",
+   "input_files": [
+    "donor_exposure.csv",
+    "xiamen_exposure.csv"
    ],
-   "script_path": "PLACEHOLDER/figure_scripts/make_supp_figure5.R",
-   "input_data_paths": [
-    "PLACEHOLDER/fitted_curves.csv"
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": null
+  },
+  {
+   "figure_id": "Supplementary_Figure6",
+   "in_article": true,
+   "script": "figure_scripts_v2/make_supplementary_s6.R",
+   "input_files": [
+    "exposure_response_pollution_adjusted.csv",
+    "sensitivity_humidity_heatindex.csv",
+    "donor_exposure_aq.csv"
    ],
-   "output_paths": [
-    "PLACEHOLDER/Supplementary_Figure5.pdf"
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": "July figure_scripts copy is superseded by figure_scripts_v2."
+  },
+  {
+   "figure_id": "Supplementary_Figure7",
+   "in_article": true,
+   "script": "figure_scripts/make_supplementary_s7.R",
+   "input_files": [
+    "donor_exposure.csv"
    ],
-   "mtime": "1970-01-01T00:00:00Z",
-   "status": "unknown"
+   "confidence": "MEDIUM",
+   "status": "resolved",
+   "unresolved_reason": "Script and PNG mtimes disagree by a few minutes. Windows library-path leftover."
+  },
+  {
+   "figure_id": "Supplementary_Figure8",
+   "in_article": true,
+   "script": null,
+   "input_files": [],
+   "confidence": "UNRESOLVED",
+   "status": "unresolved",
+   "unresolved_reason": "No make_supplementary_s8.R. Legacy make_figure5.R writes Figure5.png, not this file. Do not claim that script produced S8."
+  },
+  {
+   "figure_id": "Supplementary_Figure9",
+   "in_article": true,
+   "script": "figure_scripts/make_supplementary_s9.R",
+   "input_files": [
+    "exposure_response_results_fdr_2city_canonical.csv"
+   ],
+   "confidence": "MEDIUM",
+   "status": "resolved",
+   "unresolved_reason": "Rebuild blocked by a Windows output-prefix in the script. The named input CSV is present."
+  },
+  {
+   "figure_id": "Supplementary_Figure10",
+   "in_article": true,
+   "script": "figure_scripts/make_supplementary_s10.R",
+   "input_files": [
+    "sensitivity_heatwave_definitions.csv"
+   ],
+   "confidence": "MEDIUM",
+   "status": "resolved",
+   "unresolved_reason": "Same Windows output-prefix issue as Supplementary_Figure9."
+  },
+  {
+   "figure_id": "Figure6",
+   "in_article": false,
+   "script": "figure_scripts/make_figure6.R",
+   "input_files": [
+    "ABSENT: Tem_Sperm_武汉.xlsx",
+    "ABSENT: Tem_Sperm_重庆.xlsx"
+   ],
+   "confidence": "UNRESOLVED",
+   "status": "orphan",
+   "unresolved_reason": "Orphan: not cited in the current article. Script header writes Figure_forest, not Figure6. Fossil of a 6-to-5 renumbering."
   }
  ],
- "n_rows": 6
+ "n_rows": 16
 }

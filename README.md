@@ -30,7 +30,7 @@ python3 scripts/build_aggregates.py          # write results/json and web/public
 python3 scripts/build_aggregates.py --check  # fail if committed JSON is stale
 ```
 
-`provenance_manifest` stays pending until a real `results/aggregate_source/provenance_manifest.json` exists. Do not invent figure-to-script paths.
+`provenance_manifest` is a sanitized public extract of the analysis-host audit (figure name, script name, input filenames, confidence, unresolved reason). Absolute paths are stripped. Figure-level UNRESOLVED / MEDIUM values are not upgraded.
 
 ## Web viewer
 
