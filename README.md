@@ -51,7 +51,7 @@ The site reads only `public/data/*.json` (copied into `out/data/` at build). It 
 
 ## Git
 
-This tree is a local git repository. Hooks are copied into `.git/hooks/` (see `scripts/install-hooks.sh`). Do not use `git add -A`. Stage explicit paths. Pushing and creating a remote are manual steps for the maintainer.
+This tree is a local git repository (`master`, no remote). Hooks are copied into `.git/hooks/` (see `scripts/install-hooks.sh`). Do not use `git add -A`. Stage explicit paths. Pushing and creating a remote are manual steps for the maintainer.
 
 ## GitHub Pages (when a remote exists)
 
