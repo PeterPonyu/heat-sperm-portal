@@ -1,0 +1,16 @@
+{
+  "source": "分析输出/donor_exposure.csv",
+  "rows_two_cohort": 57345,
+  "rows_locked_complete10": 25412,
+  "locked_by_city": {
+    "Wuhan": 17268,
+    "Chongqing": 8144
+  },
+  "locked_donors_by_city": {
+    "Chongqing": 2764,
+    "Wuhan": 3675
+  },
+  "sx_rows": 24,
+  "sx_significant_interactions_p05": 17,
+  "sy_rows": 144
+}

@@ -1,0 +1,78 @@
+{
+ "schema_version": "1.0.0",
+ "generated_utc": "2026-08-20T15:23:33Z",
+ "repository": "heat-sperm-portal",
+ "contains_individual_level_data": false,
+ "datasets": [
+  {
+   "file": "cohort_summary.json",
+   "dataset": "cohort_summary",
+   "description": "Cohort composition, study periods, donor covariate distributions, exposure distributions and city-level heat climatology.",
+   "data_status": "verified",
+   "n_rows": 4,
+   "sources": [
+    "results/aggregate_source/cohort_aggregate.json",
+    "results/aggregate_source/weather_aggregate.json",
+    "results/aggregate_source/SX_SY_provenance.json",
+    "results/aggregate_source/exposure_response_results_fdr_2city_canonical.csv"
+   ]
+  },
+  {
+   "file": "baseline_table.json",
+   "dataset": "baseline_table",
+   "description": "Semen parameter distributions by cohort in the locked complete-parameter analysis sample.",
+   "data_status": "verified",
+   "n_rows": 16,
+   "sources": [
+    "results/aggregate_source/analysis_sample_sd_reference.csv"
+   ]
+  },
+  {
+   "file": "exposure_response.json",
+   "dataset": "exposure_response",
+   "description": "Confirmatory exposure-response coefficients: 13 cohort-outcome combinations x 4 spermatogenic windows x 3 exposure metrics.",
+   "data_status": "verified",
+   "n_rows": 156,
+   "sources": [
+    "results/aggregate_source/exposure_response_results_fdr_2city_canonical.csv",
+    "results/aggregate_source/tableSY_native_unit_effects.csv"
+   ]
+  },
+  {
+   "file": "interaction_tests.json",
+   "dataset": "interaction_tests",
+   "description": "Cohort-by-exposure interaction tests quantifying between-cohort heterogeneity.",
+   "data_status": "verified",
+   "n_rows": 25,
+   "sources": [
+    "results/aggregate_source/interaction_test_results.csv",
+    "results/aggregate_source/tableSX_cohort_exposure_interaction.csv"
+   ]
+  },
+  {
+   "file": "sensitivity.json",
+   "dataset": "sensitivity",
+   "description": "Sensitivity analyses: alternative heat definitions, pollutant and covariate adjustment, pandemic-year exclusion, and the superseded analysis sample.",
+   "data_status": "verified",
+   "n_rows": 452,
+   "sources": [
+    "results/aggregate_source/sensitivity_heatwave_definitions.csv",
+    "results/aggregate_source/exposure_response_pollution_adjusted.csv",
+    "results/aggregate_source/sensitivity_humidity_heatindex.csv",
+    "results/aggregate_source/sensitivity_ses.csv",
+    "results/aggregate_source/rebuttal_covid.txt",
+    "results/aggregate_source/exposure_response_results_fdr.csv"
+   ]
+  },
+  {
+   "file": "provenance_manifest.json",
+   "dataset": "provenance_manifest",
+   "description": "Which script produced each figure, from which inputs, to which outputs.",
+   "data_status": "placeholder",
+   "n_rows": 6,
+   "sources": [
+    "fixtures/provenance_manifest.fixture.json"
+   ]
+  }
+ ]
+}

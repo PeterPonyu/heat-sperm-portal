@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------------------
+# Privacy hard-exclusions. See DATA_POLICY.md.
+# This file is deliberately written before `git init` so that no forbidden
+# path can ever reach the index, not even in the initial commit.
+# ---------------------------------------------------------------------------
+
+# Spreadsheets: the upstream donor workbooks are all xlsx/xls.
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+
+# Upstream confidential source tree (identifiable donor records).
+spermdata/
+**/spermdata/
+
+# Donor-level analysis tables (65,821 donor-linked rows). Never permitted here.
+**/harmonized_donor_samples.csv
+**/harmonized_*_clinical.csv
+**/donor_exposure*.csv
+**/xiamen_exposure*.csv
+
+# Single-cell / matrix containers.
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.RData
+
+# Any raw-data staging path.
+data/raw/
+**/data/raw/
+raw/
+**/raw_data/
+
+# Secrets.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.env
+credentials.json
+id_rsa*
+.netrc
+opencode.json
+
+# Agent / editor local state.
+.cursor/
+.claude/
+.codex/
+.gpt/
+.agent/
+.aider*
+.continue/
+.windsurf/
+.omc/
+.omx/
+.omcs/
+
+# ---------------------------------------------------------------------------
+# Ordinary build noise
+# ---------------------------------------------------------------------------
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+npm-debug.log*
+yarn-error.log*
+.eslintcache

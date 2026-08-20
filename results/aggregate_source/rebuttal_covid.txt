@@ -1,0 +1,48 @@
+Chongqing: anyhw3_w0_90 (any >=35C heatwave in 0-90d) prevalence by year
+      mean  size
+year            
+2020  50.5  1791
+2021  51.0  4579
+2022  37.4  6639
+2023  31.0  6096
+2024  70.3  1402
+
+Chongqing: mean hw3_w0_90 (cumulative >=35C heatwave days) by year
+year
+2020     7.6
+2021     6.2
+2022    10.5
+2023     4.6
+2024    24.5
+
+======================================================================
+Cluster-robust OLS (cluster=donor) COVID sensitivity, expo=anyhw3_w0_90
+======================================================================
+              label             y    beta     se        p     n  donors
+        ALL 2020-24        pr_pre -0.0565 0.0234 1.56e-02 20503   10506
+       excl 2020-21        pr_pre -0.0180 0.0280 5.21e-01 14133    7614
+2022 only (heat yr)        pr_pre  0.0048 0.0390 9.02e-01  6639    3563
+        ALL 2020-24 survival_post -0.3366 0.0403 7.24e-17  5869    1616
+       excl 2020-21 survival_post  0.0183 0.0388 6.37e-01  3927    1109
+2022 only (heat yr) survival_post  0.1128 0.0437 9.92e-03  1982     522
+        ALL 2020-24       pr_post -0.0920 0.0356 9.72e-03  8143    2764
+       excl 2020-21       pr_post -0.0175 0.0424 6.81e-01  5504    1936
+2022 only (heat yr)       pr_post -0.0903 0.0607 1.37e-01  2696     896
+        ALL 2020-24       np_post -0.0707 0.0296 1.69e-02  8143    2764
+       excl 2020-21       np_post -0.0629 0.0416 1.30e-01  5504    1936
+2022 only (heat yr)       np_post -0.0125 0.0616 8.40e-01  2696     896
+        ALL 2020-24        sc_pre  0.0359 0.0249 1.50e-01 20503   10506
+       excl 2020-21        sc_pre  0.0026 0.0302 9.31e-01 14133    7614
+2022 only (heat yr)        sc_pre  0.0044 0.0415 9.16e-01  6639    3563
+        ALL 2020-24           tsc  0.0372 0.0237 1.17e-01 20503   10506
+       excl 2020-21           tsc -0.0184 0.0295 5.32e-01 14133    7614
+2022 only (heat yr)           tsc  0.0355 0.0393 3.66e-01  6639    3563
+
+Early window w70_90 (cluster-robust OLS):
+       label             y    beta     se        p    n  donors
+         ALL survival_post -0.4594 0.0559 2.01e-16 5830    1614
+excl 2020-21 survival_post -0.1812 0.0548 9.52e-04 3924    1109
+         ALL       pr_post -0.0842 0.0449 6.08e-02 8096    2761
+excl 2020-21       pr_post  0.0491 0.0585 4.01e-01 5499    1936
+         ALL       np_post -0.1566 0.0359 1.32e-05 8096    2761
+excl 2020-21       np_post -0.2489 0.0460 6.13e-08 5499    1936

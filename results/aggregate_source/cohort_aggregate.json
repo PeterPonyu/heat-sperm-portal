@@ -1,0 +1,268 @@
+{
+ "cohort": [
+  {
+   "city": "Chongqing",
+   "cohort_type": [
+    "donor"
+   ],
+   "n_samples": 20507,
+   "n_donors": 10728,
+   "year_min": 2020,
+   "year_max": 2024
+  },
+  {
+   "city": "Wenzhou",
+   "cohort_type": [
+    "donor"
+   ],
+   "n_samples": 8476,
+   "n_donors": 8233,
+   "year_min": 2015,
+   "year_max": 2017
+  },
+  {
+   "city": "Wuhan",
+   "cohort_type": [
+    "donor"
+   ],
+   "n_samples": 36838,
+   "n_donors": 10629,
+   "year_min": 2010,
+   "year_max": 2015
+  }
+ ],
+ "by_year": [
+  {
+   "city": "Chongqing",
+   "year": 2020,
+   "n_samples": 1791,
+   "n_donors": 820
+  },
+  {
+   "city": "Chongqing",
+   "year": 2021,
+   "n_samples": 4579,
+   "n_donors": 2459
+  },
+  {
+   "city": "Chongqing",
+   "year": 2022,
+   "n_samples": 6639,
+   "n_donors": 3563
+  },
+  {
+   "city": "Chongqing",
+   "year": 2023,
+   "n_samples": 6096,
+   "n_donors": 3373
+  },
+  {
+   "city": "Chongqing",
+   "year": 2024,
+   "n_samples": 1402,
+   "n_donors": 867
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2015,
+   "n_samples": 3167,
+   "n_donors": 3121
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2016,
+   "n_samples": 2814,
+   "n_donors": 2779
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2017,
+   "n_samples": 2495,
+   "n_donors": 2453
+  },
+  {
+   "city": "Wuhan",
+   "year": 2010,
+   "n_samples": 3092,
+   "n_donors": 829
+  },
+  {
+   "city": "Wuhan",
+   "year": 2011,
+   "n_samples": 6035,
+   "n_donors": 2011
+  },
+  {
+   "city": "Wuhan",
+   "year": 2012,
+   "n_samples": 4360,
+   "n_donors": 1496
+  },
+  {
+   "city": "Wuhan",
+   "year": 2013,
+   "n_samples": 7972,
+   "n_donors": 2626
+  },
+  {
+   "city": "Wuhan",
+   "year": 2014,
+   "n_samples": 10288,
+   "n_donors": 3298
+  },
+  {
+   "city": "Wuhan",
+   "year": 2015,
+   "n_samples": 5091,
+   "n_donors": 1696
+  }
+ ],
+ "exposure_dist": [
+  {
+   "city": "Chongqing",
+   "metric": "tmax_w0_90",
+   "median": 23.96,
+   "p25": 16.37,
+   "p75": 29.42,
+   "n": 20507
+  },
+  {
+   "city": "Chongqing",
+   "metric": "tmax_w70_90",
+   "median": 21.23,
+   "p25": 13.74,
+   "p75": 27.92,
+   "n": 20388
+  },
+  {
+   "city": "Chongqing",
+   "metric": "ht35_w0_90",
+   "median": 2.0,
+   "p25": 0.0,
+   "p75": 19.0,
+   "n": 20507
+  },
+  {
+   "city": "Chongqing",
+   "metric": "ht35_w70_90",
+   "median": 0.0,
+   "p25": 0.0,
+   "p75": 2.0,
+   "n": 20388
+  },
+  {
+   "city": "Wenzhou",
+   "metric": "tmax_w0_90",
+   "median": 21.53,
+   "p25": 15.05,
+   "p75": 28.35,
+   "n": 7752
+  },
+  {
+   "city": "Wenzhou",
+   "metric": "tmax_w70_90",
+   "median": 19.81,
+   "p25": 14.36,
+   "p75": 27.5,
+   "n": 8126
+  },
+  {
+   "city": "Wenzhou",
+   "metric": "ht35_w0_90",
+   "median": 0.0,
+   "p25": 0.0,
+   "p75": 2.0,
+   "n": 7752
+  },
+  {
+   "city": "Wenzhou",
+   "metric": "ht35_w70_90",
+   "median": 0.0,
+   "p25": 0.0,
+   "p75": 0.0,
+   "n": 8126
+  },
+  {
+   "city": "Wuhan",
+   "metric": "tmax_w0_90",
+   "median": 22.63,
+   "p25": 15.32,
+   "p75": 28.46,
+   "n": 34157
+  },
+  {
+   "city": "Wuhan",
+   "metric": "tmax_w70_90",
+   "median": 21.92,
+   "p25": 12.34,
+   "p75": 28.88,
+   "n": 36008
+  },
+  {
+   "city": "Wuhan",
+   "metric": "ht35_w0_90",
+   "median": 0.0,
+   "p25": 0.0,
+   "p75": 10.0,
+   "n": 34157
+  },
+  {
+   "city": "Wuhan",
+   "metric": "ht35_w70_90",
+   "median": 0.0,
+   "p25": 0.0,
+   "p75": 0.0,
+   "n": 36008
+  }
+ ],
+ "covariates": [
+  {
+   "city": "Chongqing",
+   "variable": "age",
+   "median": 24.0,
+   "p25": 22.0,
+   "p75": 29.0,
+   "n": 20506
+  },
+  {
+   "city": "Chongqing",
+   "variable": "abstinence_days",
+   "median": 4.0,
+   "p25": 3.0,
+   "p75": 5.0,
+   "n": 20504
+  },
+  {
+   "city": "Wenzhou",
+   "variable": "age",
+   "median": 33.0,
+   "p25": 29.7,
+   "p75": 37.6,
+   "n": 8458
+  },
+  {
+   "city": "Wenzhou",
+   "variable": "abstinence_days",
+   "median": 4.0,
+   "p25": 4.0,
+   "p75": 5.0,
+   "n": 8476
+  },
+  {
+   "city": "Wuhan",
+   "variable": "age",
+   "median": 26.0,
+   "p25": 23.0,
+   "p75": 30.0,
+   "n": 36808
+  },
+  {
+   "city": "Wuhan",
+   "variable": "abstinence_days",
+   "median": 5.0,
+   "p25": 4.0,
+   "p75": 7.0,
+   "n": 36235
+  }
+ ]
+}

@@ -1,0 +1,614 @@
+{
+ "weather_monthly": [
+  {
+   "city": "Chongqing",
+   "month": 1,
+   "n_days": 186,
+   "mean_tmax": 11.26,
+   "p10_tmax": 7.75,
+   "p90_tmax": 14.9
+  },
+  {
+   "city": "Chongqing",
+   "month": 2,
+   "n_days": 165,
+   "mean_tmax": 14.07,
+   "p10_tmax": 9.1,
+   "p90_tmax": 19.32
+  },
+  {
+   "city": "Chongqing",
+   "month": 3,
+   "n_days": 182,
+   "mean_tmax": 19.77,
+   "p10_tmax": 14.0,
+   "p90_tmax": 27.28
+  },
+  {
+   "city": "Chongqing",
+   "month": 4,
+   "n_days": 179,
+   "mean_tmax": 23.9,
+   "p10_tmax": 17.18,
+   "p90_tmax": 31.42
+  },
+  {
+   "city": "Chongqing",
+   "month": 5,
+   "n_days": 181,
+   "mean_tmax": 26.95,
+   "p10_tmax": 21.0,
+   "p90_tmax": 33.0
+  },
+  {
+   "city": "Chongqing",
+   "month": 6,
+   "n_days": 180,
+   "mean_tmax": 29.37,
+   "p10_tmax": 24.0,
+   "p90_tmax": 35.21
+  },
+  {
+   "city": "Chongqing",
+   "month": 7,
+   "n_days": 186,
+   "mean_tmax": 33.27,
+   "p10_tmax": 28.05,
+   "p90_tmax": 38.35
+  },
+  {
+   "city": "Chongqing",
+   "month": 8,
+   "n_days": 186,
+   "mean_tmax": 35.79,
+   "p10_tmax": 29.5,
+   "p90_tmax": 41.0
+  },
+  {
+   "city": "Chongqing",
+   "month": 9,
+   "n_days": 180,
+   "mean_tmax": 30.13,
+   "p10_tmax": 22.0,
+   "p90_tmax": 37.2
+  },
+  {
+   "city": "Chongqing",
+   "month": 10,
+   "n_days": 186,
+   "mean_tmax": 21.88,
+   "p10_tmax": 17.65,
+   "p90_tmax": 27.35
+  },
+  {
+   "city": "Chongqing",
+   "month": 11,
+   "n_days": 176,
+   "mean_tmax": 17.7,
+   "p10_tmax": 12.1,
+   "p90_tmax": 23.2
+  },
+  {
+   "city": "Chongqing",
+   "month": 12,
+   "n_days": 185,
+   "mean_tmax": 11.8,
+   "p10_tmax": 8.5,
+   "p90_tmax": 15.3
+  },
+  {
+   "city": "Wenzhou",
+   "month": 1,
+   "n_days": 120,
+   "mean_tmax": 13.42,
+   "p10_tmax": 8.9,
+   "p90_tmax": 19.91
+  },
+  {
+   "city": "Wenzhou",
+   "month": 2,
+   "n_days": 109,
+   "mean_tmax": 13.0,
+   "p10_tmax": 8.18,
+   "p90_tmax": 19.34
+  },
+  {
+   "city": "Wenzhou",
+   "month": 3,
+   "n_days": 122,
+   "mean_tmax": 15.72,
+   "p10_tmax": 10.81,
+   "p90_tmax": 21.07
+  },
+  {
+   "city": "Wenzhou",
+   "month": 4,
+   "n_days": 95,
+   "mean_tmax": 20.69,
+   "p10_tmax": 16.72,
+   "p90_tmax": 24.56
+  },
+  {
+   "city": "Wenzhou",
+   "month": 5,
+   "n_days": 118,
+   "mean_tmax": 24.9,
+   "p10_tmax": 20.9,
+   "p90_tmax": 28.76
+  },
+  {
+   "city": "Wenzhou",
+   "month": 6,
+   "n_days": 116,
+   "mean_tmax": 27.93,
+   "p10_tmax": 23.55,
+   "p90_tmax": 33.25
+  },
+  {
+   "city": "Wenzhou",
+   "month": 7,
+   "n_days": 121,
+   "mean_tmax": 31.87,
+   "p10_tmax": 29.1,
+   "p90_tmax": 34.6
+  },
+  {
+   "city": "Wenzhou",
+   "month": 8,
+   "n_days": 120,
+   "mean_tmax": 31.68,
+   "p10_tmax": 28.49,
+   "p90_tmax": 33.91
+  },
+  {
+   "city": "Wenzhou",
+   "month": 9,
+   "n_days": 120,
+   "mean_tmax": 29.0,
+   "p10_tmax": 25.07,
+   "p90_tmax": 32.22
+  },
+  {
+   "city": "Wenzhou",
+   "month": 10,
+   "n_days": 123,
+   "mean_tmax": 25.33,
+   "p10_tmax": 21.96,
+   "p90_tmax": 29.08
+  },
+  {
+   "city": "Wenzhou",
+   "month": 11,
+   "n_days": 116,
+   "mean_tmax": 19.8,
+   "p10_tmax": 15.15,
+   "p90_tmax": 24.65
+  },
+  {
+   "city": "Wenzhou",
+   "month": 12,
+   "n_days": 123,
+   "mean_tmax": 14.8,
+   "p10_tmax": 11.72,
+   "p90_tmax": 18.88
+  },
+  {
+   "city": "Wuhan",
+   "month": 1,
+   "n_days": 217,
+   "mean_tmax": 8.41,
+   "p10_tmax": 2.88,
+   "p90_tmax": 14.74
+  },
+  {
+   "city": "Wuhan",
+   "month": 2,
+   "n_days": 198,
+   "mean_tmax": 10.37,
+   "p10_tmax": 3.85,
+   "p90_tmax": 18.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 3,
+   "n_days": 217,
+   "mean_tmax": 16.51,
+   "p10_tmax": 8.06,
+   "p90_tmax": 23.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 4,
+   "n_days": 189,
+   "mean_tmax": 22.13,
+   "p10_tmax": 15.36,
+   "p90_tmax": 28.06
+  },
+  {
+   "city": "Wuhan",
+   "month": 5,
+   "n_days": 217,
+   "mean_tmax": 26.77,
+   "p10_tmax": 22.0,
+   "p90_tmax": 32.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 6,
+   "n_days": 210,
+   "mean_tmax": 29.76,
+   "p10_tmax": 25.0,
+   "p90_tmax": 34.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 7,
+   "n_days": 217,
+   "mean_tmax": 32.96,
+   "p10_tmax": 27.56,
+   "p90_tmax": 37.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 8,
+   "n_days": 217,
+   "mean_tmax": 32.82,
+   "p10_tmax": 27.66,
+   "p90_tmax": 37.7
+  },
+  {
+   "city": "Wuhan",
+   "month": 9,
+   "n_days": 210,
+   "mean_tmax": 28.26,
+   "p10_tmax": 22.18,
+   "p90_tmax": 33.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 10,
+   "n_days": 217,
+   "mean_tmax": 23.22,
+   "p10_tmax": 17.0,
+   "p90_tmax": 28.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 11,
+   "n_days": 210,
+   "mean_tmax": 16.55,
+   "p10_tmax": 11.18,
+   "p90_tmax": 22.0
+  },
+  {
+   "city": "Wuhan",
+   "month": 12,
+   "n_days": 217,
+   "mean_tmax": 10.76,
+   "p10_tmax": 6.24,
+   "p90_tmax": 16.2
+  },
+  {
+   "city": "Xiamen",
+   "month": 1,
+   "n_days": 155,
+   "mean_tmax": 18.08,
+   "p10_tmax": 14.0,
+   "p90_tmax": 22.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 2,
+   "n_days": 141,
+   "mean_tmax": 18.32,
+   "p10_tmax": 13.0,
+   "p90_tmax": 23.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 3,
+   "n_days": 155,
+   "mean_tmax": 20.4,
+   "p10_tmax": 15.0,
+   "p90_tmax": 26.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 4,
+   "n_days": 129,
+   "mean_tmax": 25.13,
+   "p10_tmax": 20.0,
+   "p90_tmax": 30.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 5,
+   "n_days": 155,
+   "mean_tmax": 28.18,
+   "p10_tmax": 23.0,
+   "p90_tmax": 32.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 6,
+   "n_days": 150,
+   "mean_tmax": 31.57,
+   "p10_tmax": 27.0,
+   "p90_tmax": 35.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 7,
+   "n_days": 155,
+   "mean_tmax": 33.2,
+   "p10_tmax": 30.0,
+   "p90_tmax": 35.8
+  },
+  {
+   "city": "Xiamen",
+   "month": 8,
+   "n_days": 155,
+   "mean_tmax": 33.07,
+   "p10_tmax": 30.0,
+   "p90_tmax": 35.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 9,
+   "n_days": 150,
+   "mean_tmax": 31.88,
+   "p10_tmax": 29.0,
+   "p90_tmax": 34.1
+  },
+  {
+   "city": "Xiamen",
+   "month": 10,
+   "n_days": 155,
+   "mean_tmax": 28.87,
+   "p10_tmax": 26.0,
+   "p90_tmax": 32.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 11,
+   "n_days": 150,
+   "mean_tmax": 24.81,
+   "p10_tmax": 21.0,
+   "p90_tmax": 29.0
+  },
+  {
+   "city": "Xiamen",
+   "month": 12,
+   "n_days": 155,
+   "mean_tmax": 19.57,
+   "p10_tmax": 16.0,
+   "p90_tmax": 24.0
+  }
+ ],
+ "weather_annual_hot_days": [
+  {
+   "city": "Chongqing",
+   "year": 2019,
+   "n_days_observed": 361,
+   "days_tmax_ge_30": 86,
+   "days_tmax_ge_32": 58,
+   "days_tmax_ge_35": 32,
+   "max_tmax": 39.2
+  },
+  {
+   "city": "Chongqing",
+   "year": 2020,
+   "n_days_observed": 366,
+   "days_tmax_ge_30": 82,
+   "days_tmax_ge_32": 64,
+   "days_tmax_ge_35": 35,
+   "max_tmax": 40.0
+  },
+  {
+   "city": "Chongqing",
+   "year": 2021,
+   "n_days_observed": 360,
+   "days_tmax_ge_30": 94,
+   "days_tmax_ge_32": 69,
+   "days_tmax_ge_35": 38,
+   "max_tmax": 40.7
+  },
+  {
+   "city": "Chongqing",
+   "year": 2022,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 105,
+   "days_tmax_ge_32": 85,
+   "days_tmax_ge_35": 62,
+   "max_tmax": 43.0
+  },
+  {
+   "city": "Chongqing",
+   "year": 2023,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 96,
+   "days_tmax_ge_32": 75,
+   "days_tmax_ge_35": 40,
+   "max_tmax": 38.8
+  },
+  {
+   "city": "Chongqing",
+   "year": 2024,
+   "n_days_observed": 355,
+   "days_tmax_ge_30": 111,
+   "days_tmax_ge_32": 89,
+   "days_tmax_ge_35": 72,
+   "max_tmax": 41.5
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2014,
+   "n_days_observed": 351,
+   "days_tmax_ge_30": 67,
+   "days_tmax_ge_32": 32,
+   "days_tmax_ge_35": 1,
+   "max_tmax": 37.1
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2015,
+   "n_days_observed": 340,
+   "days_tmax_ge_30": 60,
+   "days_tmax_ge_32": 29,
+   "days_tmax_ge_35": 5,
+   "max_tmax": 38.2
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2016,
+   "n_days_observed": 354,
+   "days_tmax_ge_30": 80,
+   "days_tmax_ge_32": 55,
+   "days_tmax_ge_35": 6,
+   "max_tmax": 37.4
+  },
+  {
+   "city": "Wenzhou",
+   "year": 2017,
+   "n_days_observed": 358,
+   "days_tmax_ge_30": 82,
+   "days_tmax_ge_32": 51,
+   "days_tmax_ge_35": 8,
+   "max_tmax": 38.3
+  },
+  {
+   "city": "Wuhan",
+   "year": 2010,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 89,
+   "days_tmax_ge_32": 68,
+   "days_tmax_ge_35": 27,
+   "max_tmax": 40.0
+  },
+  {
+   "city": "Wuhan",
+   "year": 2011,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 78,
+   "days_tmax_ge_32": 56,
+   "days_tmax_ge_35": 21,
+   "max_tmax": 37.1
+  },
+  {
+   "city": "Wuhan",
+   "year": 2012,
+   "n_days_observed": 366,
+   "days_tmax_ge_30": 91,
+   "days_tmax_ge_32": 64,
+   "days_tmax_ge_35": 33,
+   "max_tmax": 38.0
+  },
+  {
+   "city": "Wuhan",
+   "year": 2013,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 108,
+   "days_tmax_ge_32": 88,
+   "days_tmax_ge_35": 48,
+   "max_tmax": 41.0
+  },
+  {
+   "city": "Wuhan",
+   "year": 2014,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 71,
+   "days_tmax_ge_32": 45,
+   "days_tmax_ge_35": 13,
+   "max_tmax": 37.0
+  },
+  {
+   "city": "Wuhan",
+   "year": 2015,
+   "n_days_observed": 344,
+   "days_tmax_ge_30": 83,
+   "days_tmax_ge_32": 56,
+   "days_tmax_ge_35": 12,
+   "max_tmax": 36.0
+  },
+  {
+   "city": "Wuhan",
+   "year": 2016,
+   "n_days_observed": 366,
+   "days_tmax_ge_30": 99,
+   "days_tmax_ge_32": 65,
+   "days_tmax_ge_35": 31,
+   "max_tmax": 38.0
+  },
+  {
+   "city": "Xiamen",
+   "year": 2013,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 119,
+   "days_tmax_ge_32": 85,
+   "days_tmax_ge_35": 16,
+   "max_tmax": 37.0
+  },
+  {
+   "city": "Xiamen",
+   "year": 2014,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 134,
+   "days_tmax_ge_32": 106,
+   "days_tmax_ge_35": 32,
+   "max_tmax": 39.0
+  },
+  {
+   "city": "Xiamen",
+   "year": 2015,
+   "n_days_observed": 344,
+   "days_tmax_ge_30": 132,
+   "days_tmax_ge_32": 81,
+   "days_tmax_ge_35": 19,
+   "max_tmax": 37.9
+  },
+  {
+   "city": "Xiamen",
+   "year": 2016,
+   "n_days_observed": 366,
+   "days_tmax_ge_30": 150,
+   "days_tmax_ge_32": 103,
+   "days_tmax_ge_35": 29,
+   "max_tmax": 37.0
+  },
+  {
+   "city": "Xiamen",
+   "year": 2017,
+   "n_days_observed": 365,
+   "days_tmax_ge_30": 142,
+   "days_tmax_ge_32": 112,
+   "days_tmax_ge_35": 37,
+   "max_tmax": 37.0
+  }
+ ],
+ "weather_span": [
+  {
+   "city": "Chongqing",
+   "date_min": "2019-01-01",
+   "date_max": "2024-12-31",
+   "n_days": 2172
+  },
+  {
+   "city": "Wenzhou",
+   "date_min": "2014-01-02",
+   "date_max": "2017-12-31",
+   "n_days": 1403
+  },
+  {
+   "city": "Wuhan",
+   "date_min": "2010-01-01",
+   "date_max": "2016-12-31",
+   "n_days": 2536
+  },
+  {
+   "city": "Xiamen",
+   "date_min": "2013-01-01",
+   "date_max": "2017-12-31",
+   "n_days": 1805
+  }
+ ]
+}

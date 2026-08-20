@@ -1,0 +1,71 @@
+{
+ "_fixture": true,
+ "_purpose": "Placeholder standing in for 01_REVISION_DOCS/provenance/provenance_manifest.json until that file exists. Field names and types are the contract; the values are not results.",
+ "_field_contract": {
+  "figure_id": "string, figure identifier as used in the manuscript",
+  "panel_letters": "array of strings, panel tags within the figure",
+  "script_path": "string, absolute or repository-relative path of the script that produced the figure",
+  "input_data_paths": "array of strings, files the script read",
+  "output_paths": "array of strings, files the script wrote",
+  "mtime": "string, ISO-8601 UTC modification time of the output",
+  "status": "string, one of verified | stale | missing | unknown"
+ },
+ "_real_fields": ["figure_id"],
+ "_placeholder_fields": ["panel_letters", "script_path", "input_data_paths", "output_paths", "mtime", "status"],
+ "entries": [
+  {
+   "figure_id": "Figure1",
+   "panel_letters": ["a", "b", "c", "d", "e", "f"],
+   "script_path": "PLACEHOLDER/figure_scripts/make_figure1.R",
+   "input_data_paths": ["PLACEHOLDER/aggregate_weather_summary.csv"],
+   "output_paths": ["PLACEHOLDER/Figure1.pdf", "PLACEHOLDER/Figure1.png"],
+   "mtime": "1970-01-01T00:00:00Z",
+   "status": "unknown"
+  },
+  {
+   "figure_id": "Figure2",
+   "panel_letters": ["a", "b"],
+   "script_path": "PLACEHOLDER/figure_scripts/make_figure2.R",
+   "input_data_paths": ["PLACEHOLDER/exposure_response_results.csv"],
+   "output_paths": ["PLACEHOLDER/Figure2.pdf", "PLACEHOLDER/Figure2.png"],
+   "mtime": "1970-01-01T00:00:00Z",
+   "status": "unknown"
+  },
+  {
+   "figure_id": "Figure3",
+   "panel_letters": ["a", "b", "c"],
+   "script_path": "PLACEHOLDER/figure_scripts/make_figure3.R",
+   "input_data_paths": ["PLACEHOLDER/exposure_response_results.csv"],
+   "output_paths": ["PLACEHOLDER/Figure3.pdf"],
+   "mtime": "1970-01-01T00:00:00Z",
+   "status": "unknown"
+  },
+  {
+   "figure_id": "Figure4",
+   "panel_letters": ["a", "b"],
+   "script_path": "PLACEHOLDER/figure_scripts/make_figure4.R",
+   "input_data_paths": ["PLACEHOLDER/sensitivity_results.csv"],
+   "output_paths": ["PLACEHOLDER/Figure4.pdf"],
+   "mtime": "1970-01-01T00:00:00Z",
+   "status": "unknown"
+  },
+  {
+   "figure_id": "Figure5",
+   "panel_letters": ["a", "b", "c", "d"],
+   "script_path": "PLACEHOLDER/figure_scripts/make_figure5.R",
+   "input_data_paths": ["PLACEHOLDER/interaction_results.csv"],
+   "output_paths": ["PLACEHOLDER/Figure5.pdf"],
+   "mtime": "1970-01-01T00:00:00Z",
+   "status": "unknown"
+  },
+  {
+   "figure_id": "Supplementary_Figure5",
+   "panel_letters": ["a", "b", "c", "d", "e", "f"],
+   "script_path": "PLACEHOLDER/figure_scripts/make_supp_figure5.R",
+   "input_data_paths": ["PLACEHOLDER/fitted_curves.csv"],
+   "output_paths": ["PLACEHOLDER/Supplementary_Figure5.pdf"],
+   "mtime": "1970-01-01T00:00:00Z",
+   "status": "unknown"
+  }
+ ]
+}

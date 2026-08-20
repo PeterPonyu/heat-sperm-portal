@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Privacy gate. Installed by scripts/install-hooks.sh (copied into .git/hooks/).
+set -euo pipefail
+exec "$(git rev-parse --show-toplevel)/scripts/check-no-pii.sh" --staged
