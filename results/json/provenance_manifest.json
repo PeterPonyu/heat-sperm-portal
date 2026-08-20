@@ -2,7 +2,7 @@
  "schema_version": "1.0.0",
  "dataset": "provenance_manifest",
  "description": "Which script produced each figure, from which inputs, to which outputs.",
- "generated_utc": "2026-08-20T16:30:24Z",
+ "generated_utc": "2026-08-20T19:12:41Z",
  "data_status": "verified",
  "provenance": {
   "sources": [
@@ -10,8 +10,8 @@
     "file": "results/aggregate_source/provenance_manifest.json",
     "upstream_origin": "01_REVISION_DOCS/provenance/provenance_manifest.json",
     "kind": "sanitized figure-to-script records",
-    "sha256": "62203c0244ea1aa5aa96fdc19cfe0b225fdcaf54460d80ae999f25f5a81d1ef1",
-    "bytes": 7108
+    "sha256": "042bdd7bfbc104ba8ba997b77ca42d9178dc6e45d2886d0f1e537dd0f121e50c",
+    "bytes": 6458
    }
   ]
  },
@@ -27,8 +27,8 @@
   "UNRESOLVED": "No on-box script writes this filename. No link was invented."
  },
  "confidence_counts": {
-  "HIGH": 6,
-  "MEDIUM": 5,
+  "HIGH": 11,
+  "MEDIUM": 0,
   "LOW": 0,
   "UNRESOLVED": 5
  },
@@ -61,30 +61,25 @@
   {
    "figure_id": "Figure3",
    "in_article": true,
-   "script": "figure_scripts/make_figure3.R",
+   "script": "figure_scripts_v2/make_figure3.R",
    "input_files": [
-    "ABSENT: Tem_Sperm_武汉.xlsx",
-    "ABSENT: Tem_Sperm_重庆.xlsx",
-    "ABSENT: 武汉_气温.xlsx",
-    "ABSENT: 重庆_气温.xlsx"
+    "harmonized_donor_samples.csv",
+    "weather_daily.csv"
    ],
-   "confidence": "MEDIUM",
-   "status": "resolved_script_rebuild_blocked",
-   "unresolved_reason": "Named generator exists. Rebuild blocked: workbook inputs named by the script are absent. Cannot claim the later script file produced this PNG."
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": null
   },
   {
    "figure_id": "Figure4",
    "in_article": true,
-   "script": "figure_scripts/make_figure4.R",
+   "script": "figure_scripts_v2/make_figure4.R",
    "input_files": [
-    "ABSENT: Tem_Sperm_武汉.xlsx",
-    "ABSENT: Tem_Sperm_重庆.xlsx",
-    "ABSENT: 武汉_气温.xlsx",
-    "ABSENT: 重庆_气温.xlsx"
+    "donor_exposure.csv"
    ],
-   "confidence": "MEDIUM",
-   "status": "resolved_script_rebuild_blocked",
-   "unresolved_reason": "Same missing-workbook block as Figure 3."
+   "confidence": "HIGH",
+   "status": "resolved",
+   "unresolved_reason": null
   },
   {
    "figure_id": "Figure5",
@@ -167,13 +162,13 @@
   {
    "figure_id": "Supplementary_Figure7",
    "in_article": true,
-   "script": "figure_scripts/make_supplementary_s7.R",
+   "script": "figure_scripts_v2/make_supplementary_s7.R",
    "input_files": [
     "donor_exposure.csv"
    ],
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "status": "resolved",
-   "unresolved_reason": "Script and PNG mtimes disagree by a few minutes. Windows library-path leftover."
+   "unresolved_reason": null
   },
   {
    "figure_id": "Supplementary_Figure8",
@@ -182,29 +177,29 @@
    "input_files": [],
    "confidence": "UNRESOLVED",
    "status": "unresolved",
-   "unresolved_reason": "No make_supplementary_s8.R. Legacy make_figure5.R writes Figure5.png, not this file. Do not claim that script produced S8."
+   "unresolved_reason": "No on-box script writes this filename. Do not claim a generator. Caption alignment only; the PNG remains an archived July file."
   },
   {
    "figure_id": "Supplementary_Figure9",
    "in_article": true,
-   "script": "figure_scripts/make_supplementary_s9.R",
+   "script": "figure_scripts_v2/make_supplementary_s9.R",
    "input_files": [
     "exposure_response_results_fdr_2city_canonical.csv"
    ],
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "status": "resolved",
-   "unresolved_reason": "Rebuild blocked by a Windows output-prefix in the script. The named input CSV is present."
+   "unresolved_reason": null
   },
   {
    "figure_id": "Supplementary_Figure10",
    "in_article": true,
-   "script": "figure_scripts/make_supplementary_s10.R",
+   "script": "figure_scripts_v2/make_supplementary_s10.R",
    "input_files": [
     "sensitivity_heatwave_definitions.csv"
    ],
-   "confidence": "MEDIUM",
+   "confidence": "HIGH",
    "status": "resolved",
-   "unresolved_reason": "Same Windows output-prefix issue as Supplementary_Figure9."
+   "unresolved_reason": null
   },
   {
    "figure_id": "Figure6",
@@ -215,8 +210,8 @@
     "ABSENT: Tem_Sperm_重庆.xlsx"
    ],
    "confidence": "UNRESOLVED",
-   "status": "orphan",
-   "unresolved_reason": "Orphan: not cited in the current article. Script header writes Figure_forest, not Figure6. Fossil of a 6-to-5 renumbering."
+   "status": "deprecated",
+   "unresolved_reason": "Deprecated: not among the 15 figures included in the current article. Script header writes Figure_forest, not Figure6."
   }
  ],
  "n_rows": 16

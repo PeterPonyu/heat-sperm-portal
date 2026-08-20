@@ -194,7 +194,8 @@ h3 {
 }
 
 .badge.UNRESOLVED,
-.badge.orphan {
+.badge.orphan,
+.badge.deprecated {
   background: #f3dcdc;
   color: #7a1f1f;
 }
