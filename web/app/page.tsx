@@ -14,7 +14,7 @@ const ROUTES: Record<string, string> = {
 export default function HomePage() {
   return (
     <>
-      <h1>Published aggregates</h1>
+      <h1>Aggregate JSON datasets</h1>
       <p className="lede">
         Six JSON datasets, rebuilt from grouped model output. The index below is{" "}
         <code>manifest.json</code>. Individual-level data are not present (
