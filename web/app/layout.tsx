@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s — Heat-exposure sperm analysis",
   },
   description:
-    "Static viewer for aggregate statistics from a heat-exposure and cryopreserved donor-sperm analysis. Individual-level records are not published here.",
+    "Static viewer for aggregate statistics from a heat-exposure and cryopreserved donor-sperm analysis. Individual-level records are not included.",
   robots: { index: false, follow: false },
 };
 

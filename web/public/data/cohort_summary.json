@@ -1012,7 +1012,7 @@
      "sample_definition": "harmonised source table, all records",
      "n_samples": 36838,
      "n_donors": null,
-     "n_donors_note": "Distinct-key counts in the harmonised source table are not comparable with the analysis-sample donor counts and are therefore not published here.",
+     "n_donors_note": "Distinct-key counts in the harmonised source table are not comparable with the analysis-sample donor counts and are therefore omitted.",
      "source": "results/aggregate_source/cohort_aggregate.json"
     },
     {
@@ -1042,7 +1042,7 @@
      "sample_definition": "harmonised source table, all records",
      "n_samples": 20507,
      "n_donors": null,
-     "n_donors_note": "Distinct-key counts in the harmonised source table are not comparable with the analysis-sample donor counts and are therefore not published here.",
+     "n_donors_note": "Distinct-key counts in the harmonised source table are not comparable with the analysis-sample donor counts and are therefore omitted.",
      "source": "results/aggregate_source/cohort_aggregate.json"
     },
     {
@@ -1072,7 +1072,7 @@
      "sample_definition": "harmonised source table, all records",
      "n_samples": 8476,
      "n_donors": null,
-     "n_donors_note": "Distinct-key counts in the harmonised source table are not comparable with the analysis-sample donor counts and are therefore not published here.",
+     "n_donors_note": "Distinct-key counts in the harmonised source table are not comparable with the analysis-sample donor counts and are therefore omitted.",
      "source": "results/aggregate_source/cohort_aggregate.json"
     }
    ]

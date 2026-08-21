@@ -233,7 +233,7 @@ def build_cohort_summary() -> dict:
                 "n_donors_note": (
                     "Distinct-key counts in the harmonised source table are not "
                     "comparable with the analysis-sample donor counts and are "
-                    "therefore not published here."
+                    "therefore omitted."
                 ),
                 "source": "results/aggregate_source/cohort_aggregate.json",
             })
@@ -356,7 +356,7 @@ def build_baseline_table() -> dict:
             "The standard deviation column is the within-cohort scaling constant used "
             "to express model coefficients in SD units and to back-convert them to "
             "native units.",
-            "Only one stratum is published: the analysis sample as a whole. No "
+            "Only one stratum is included: the analysis sample as a whole. No "
             "stratification that could reduce cell sizes towards individual records "
             "is included.",
         ],
@@ -457,7 +457,7 @@ def build_interaction_tests() -> dict:
     rows = []
     for entry in read_csv("interaction_test_results.csv"):
         rows.append({
-            "test_set": "manuscript primary interaction test",
+            "test_set": "primary cohort-by-exposure interaction test",
             "outcome_label": entry["outcome"],
             "outcome": {"Concentration": "sc_pre"}.get(entry["outcome"], entry["outcome"].lower()),
             "exposure_metric": "cumulative high-temperature days",
@@ -548,8 +548,8 @@ COVID_ROW = re.compile(
 
 
 def parse_pandemic_exclusion() -> list[dict]:
-    """Parse the pandemic-year sensitivity tables out of the rebuttal text dump."""
-    text = (SRC / "rebuttal_covid.txt").read_text(encoding="utf-8")
+    """Parse the pandemic-year sensitivity tables out of the COVID-period exclusion text dump."""
+    text = (SRC / "covid_period_exclusion_sensitivity.txt").read_text(encoding="utf-8")
     rows: list[dict] = []
     window = "w0_90"
     exposure = "anyhw3"
@@ -585,7 +585,7 @@ def parse_pandemic_exclusion() -> list[dict]:
             "n_donors": as_int(match.group("donors")),
             "model_id": MODELS.id_for(("Cluster-robust OLS, donor-level clustering, outcome "
                       "standardised within cohort.")),
-            "source": "results/aggregate_source/rebuttal_covid.txt",
+            "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt",
         })
     if len(rows) != 24:
         raise SystemExit(
@@ -736,7 +736,7 @@ def build_sensitivity() -> dict:
             source_ref("sensitivity_humidity_heatindex.csv",
                        "分析输出/sensitivity_humidity_heatindex.csv", "model output"),
             source_ref("sensitivity_ses.csv", "分析输出/sensitivity_ses.csv", "model output"),
-            source_ref("rebuttal_covid.txt", "分析输出/rebuttal_covid.txt",
+            source_ref("covid_period_exclusion_sensitivity.txt", "分析输出/covid_period_exclusion_sensitivity.txt",
                        "aggregate model output as a formatted text table, parsed by "
                        "scripts/build_aggregates.py"),
             source_ref("exposure_response_results_fdr.csv",

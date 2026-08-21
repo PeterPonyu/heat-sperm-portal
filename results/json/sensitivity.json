@@ -35,8 +35,8 @@
     "bytes": 645
    },
    {
-    "file": "results/aggregate_source/rebuttal_covid.txt",
-    "upstream_origin": "分析输出/rebuttal_covid.txt",
+    "file": "results/aggregate_source/covid_period_exclusion_sensitivity.txt",
+    "upstream_origin": "分析输出/covid_period_exclusion_sensitivity.txt",
     "kind": "aggregate model output as a formatted text table, parsed by scripts/build_aggregates.py",
     "sha256": "f7dc6bd2878917bd6c09021b35dd7d8654929cc696eee23b74431cb5da98612b",
     "bytes": 2452
@@ -7449,7 +7449,7 @@
    "n": 20503,
    "n_donors": 10506,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7477,7 +7477,7 @@
    "n": 14133,
    "n_donors": 7614,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7505,7 +7505,7 @@
    "n": 6639,
    "n_donors": 3563,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7533,7 +7533,7 @@
    "n": 5869,
    "n_donors": 1616,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7561,7 +7561,7 @@
    "n": 3927,
    "n_donors": 1109,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7589,7 +7589,7 @@
    "n": 1982,
    "n_donors": 522,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7617,7 +7617,7 @@
    "n": 8143,
    "n_donors": 2764,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7645,7 +7645,7 @@
    "n": 5504,
    "n_donors": 1936,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7673,7 +7673,7 @@
    "n": 2696,
    "n_donors": 896,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7701,7 +7701,7 @@
    "n": 8143,
    "n_donors": 2764,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7729,7 +7729,7 @@
    "n": 5504,
    "n_donors": 1936,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7757,7 +7757,7 @@
    "n": 2696,
    "n_donors": 896,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7785,7 +7785,7 @@
    "n": 20503,
    "n_donors": 10506,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7813,7 +7813,7 @@
    "n": 14133,
    "n_donors": 7614,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7841,7 +7841,7 @@
    "n": 6639,
    "n_donors": 3563,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7869,7 +7869,7 @@
    "n": 20503,
    "n_donors": 10506,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7897,7 +7897,7 @@
    "n": 14133,
    "n_donors": 7614,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7925,7 +7925,7 @@
    "n": 6639,
    "n_donors": 3563,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7953,7 +7953,7 @@
    "n": 5830,
    "n_donors": 1614,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -7981,7 +7981,7 @@
    "n": 3924,
    "n_donors": 1109,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -8009,7 +8009,7 @@
    "n": 8096,
    "n_donors": 2761,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -8037,7 +8037,7 @@
    "n": 5499,
    "n_donors": 1936,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -8065,7 +8065,7 @@
    "n": 8096,
    "n_donors": 2761,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "pandemic_exclusion",
@@ -8093,7 +8093,7 @@
    "n": 5499,
    "n_donors": 1936,
    "model_id": "m5",
-   "source": "results/aggregate_source/rebuttal_covid.txt"
+   "source": "results/aggregate_source/covid_period_exclusion_sensitivity.txt"
   },
   {
    "family": "analysis_sample_variant",

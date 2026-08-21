@@ -32,7 +32,7 @@
  },
  "rows": [
   {
-   "test_set": "manuscript primary interaction test",
+   "test_set": "primary cohort-by-exposure interaction test",
    "outcome_label": "Concentration",
    "outcome": "sc_pre",
    "exposure_metric": "cumulative high-temperature days",

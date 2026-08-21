@@ -45,7 +45,7 @@ export function SiteFrame({ children }: { children: React.ReactNode }) {
       <footer className="site-footer">
         <div className="site-footer-inner">
           <p>
-            Unpublished research. Figures and coefficients are copied from{" "}
+            Figures and coefficients are copied from{" "}
             <code>web/public/data/</code>; nothing is estimated in the browser.
           </p>
           <p>

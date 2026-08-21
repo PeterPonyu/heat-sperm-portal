@@ -1,6 +1,6 @@
 # Analysis contract
 
-This file records the codes and model text that `scripts/build_aggregates.py` copies into the published JSON. It is a dictionary, not a results paper. Numbers live only in `results/aggregate_source/` and the derived JSON.
+This file records the codes and model text that `scripts/build_aggregates.py` copies into the aggregate JSON. It is a dictionary, not a results paper. Numbers live only in `results/aggregate_source/` and the derived JSON.
 
 Upstream definitions are the analysis-host scripts (exposure-window builder and the confirmatory model). If those scripts change, update this file and the Python vocabularies together.
 
@@ -56,9 +56,9 @@ Coefficients are in within-cohort SD units. Native-unit back-conversion is attac
 
 ## Sample definitions (do not mix)
 
-Published counts are labelled by definition because they are not the same records:
+Counts are labelled by definition because they are not the same records:
 
-1. Harmonised source table, all records (`cohort_aggregate.json`) — sample counts only; distinct-key counts from that table are not published.
+1. Harmonised source table, all records (`cohort_aggregate.json`) — sample counts only; distinct-key counts from that table are omitted.
 2. Locked complete-parameter analysis sample (`SX_SY_provenance.json`).
 3. Confirmatory model sample (maximum *n* in the 156-test family).
 
@@ -79,7 +79,7 @@ Sensitivity rows are not in the 156-test FDR family unless the source file alrea
 
 ## Interaction tests
 
-Two unreconciled sets: the manuscript primary interaction file (sparse columns) and the supplementary interaction table (per-cohort slopes, per +10 high-temperature days). Null fields stay null.
+Two unreconciled sets: the primary cohort-by-exposure interaction file (sparse columns) and the supplementary interaction table (per-cohort slopes, per +10 high-temperature days). Null fields stay null.
 
 ## Provenance
 

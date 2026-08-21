@@ -17,7 +17,7 @@
  },
  "notes": [
   "The standard deviation column is the within-cohort scaling constant used to express model coefficients in SD units and to back-convert them to native units.",
-  "Only one stratum is published: the analysis sample as a whole. No stratification that could reduce cell sizes towards individual records is included."
+  "Only one stratum is included: the analysis sample as a whole. No stratification that could reduce cell sizes towards individual records is included."
  ],
  "rows": [
   {

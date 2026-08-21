@@ -1,8 +1,8 @@
-# Heat-exposure / cryopreserved donor-sperm aggregate portal
+# Heat-exposure / cryopreserved donor-sperm aggregate tables
 
-Local static viewer for **aggregate** results from a heat-exposure analysis of cryopreserved donor sperm. Individual-level records are not stored here and are not served by the site.
+Aggregate tables from a heat-exposure semen-quality analysis of cryopreserved donor sperm. Individual-level records are not stored here and are not served by the site.
 
-This is unpublished research. The pages list the numbers already written to `web/public/data/*.json`. They do not add estimates, claims, or journal packaging.
+The pages list the numbers already written to `web/public/data/*.json`. They do not add estimates, claims, or journal packaging.
 
 ## Privacy
 

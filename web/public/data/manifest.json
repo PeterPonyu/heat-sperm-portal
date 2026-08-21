@@ -60,7 +60,7 @@
     "results/aggregate_source/exposure_response_pollution_adjusted.csv",
     "results/aggregate_source/sensitivity_humidity_heatindex.csv",
     "results/aggregate_source/sensitivity_ses.csv",
-    "results/aggregate_source/rebuttal_covid.txt",
+    "results/aggregate_source/covid_period_exclusion_sensitivity.txt",
     "results/aggregate_source/exposure_response_results_fdr.csv"
    ]
   },

@@ -1,12 +1,12 @@
 # Data policy
 
-This repository is an **aggregate-statistics portal**. It may hold grouped counts, model coefficients, and city-level weather summaries. It may not hold donor-level records.
+This repository holds **aggregate statistics** from a heat-exposure semen-quality analysis. It may hold grouped counts, model coefficients, and city-level weather summaries. It may not hold donor-level records.
 
 ## Hard rule
 
 **Donor-level data never leave the analysis host.**
 
-The confidential tables (harmonised sample files, donor-linked exposure tables, clinic workbooks, and any file that can be joined back to a person) stay on the machine where the analysis was run. They are not copied into this repository, not committed, not uploaded as GitHub Actions artifacts, and not published with the static site.
+The confidential tables (harmonised sample files, donor-linked exposure tables, clinic workbooks, and any file that can be joined back to a person) stay on the machine where the analysis was run. They are not copied into this repository, not committed, not uploaded as GitHub Actions artifacts, and not included in the static site.
 
 The only sanctioned bridge is `scripts/remote_summarise.py`, which is run **on the analysis host**. It reads the confidential tables in place and writes grouped statistics (counts, medians, quartiles). No row, key, or free-text identifier is emitted.
 
@@ -16,7 +16,7 @@ The only sanctioned bridge is `scripts/remote_summarise.py`, which is run **on t
 - Aggregate source tables under `results/aggregate_source/` (model output and grouped summaries already reduced on the host)
 - Build scripts, schema notes, and the static viewer
 
-Every published dataset carries `data_status`: `verified` (built from a real aggregate file) or `placeholder` / pending (shape only; not a result).
+Every dataset carries `data_status`: `verified` (built from a real aggregate file) or `placeholder` / pending (shape only; not a result).
 
 ## What this repository must never contain
 
