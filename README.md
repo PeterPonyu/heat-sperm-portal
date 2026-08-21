@@ -55,4 +55,6 @@ This tree is a local git repository (`master`, no remote). Hooks are copied into
 
 ## GitHub Pages (when a remote exists)
 
-`.github/workflows/pages.yml` builds the static export on push / pull request / `workflow_dispatch`. It does not run on a schedule. The uploaded artifact is `web/out` only.
+`.github/workflows/pages.yml` builds the static export on push / pull request / `workflow_dispatch`. It does not run on a schedule. Upload and deploy run only when the repository variable `ENABLE_PAGES` is `true`. The uploaded artifact is `web/out` only.
+
+`.github/workflows/ci.yml` repeats the same gates plus `npm ci` / typecheck / export. It does not compile `article.tex` and does not download datasets.
