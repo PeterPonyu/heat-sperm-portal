@@ -7,26 +7,41 @@ on:
     branches: [main, master]
   workflow_dispatch:
 
-# No schedule. The artifact is the Next.js static export of aggregate JSON only.
+# No schedule. Artifact is the Next.js static export of aggregate JSON only.
+# Dataset downloads are forbidden. Deploy is fail-closed: it runs only when
+# the repository variable ENABLE_PAGES is the string "true". Unset means skip.
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: No dataset download
+        run: scripts/check-no-download.sh
+
       - name: Privacy gate (working tree)
         run: scripts/check-no-pii.sh --worktree
+
+      - name: Locked numbers
+        run: python3 scripts/check-locked-numbers.py
+
+      - name: Source hashes
+        run: python3 scripts/check-source-hashes.py
+
+      - name: Aggregate JSON not stale
+        run: python3 scripts/build_aggregates.py --check
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -69,14 +84,18 @@ jobs:
           test -f web/out/data/manifest.json
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && vars.ENABLE_PAGES == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: web/out
 
   deploy:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && vars.ENABLE_PAGES == 'true'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
